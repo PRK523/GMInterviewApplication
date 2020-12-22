@@ -40,6 +40,19 @@ class GitApiViewController: UIViewController, UITableViewDelegate, UITableViewDa
         return cell
     }
     
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return "GitHub Api Details"
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 45.0
+    }
+    
+    func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+        guard let header = view as? UITableViewHeaderFooterView else { return }
+        header.textLabel?.font = .boldSystemFont(ofSize: 20)
+    }
+    
     private func parse() {
         //you can also use my one of my current repos url, but it has 11 commits. https://api.github.com/repos/PRK523/GitHubApi/commits
         guard let url = URL(string: "https://api.github.com/repos/eficode/weatherapp/commits") else { return }
