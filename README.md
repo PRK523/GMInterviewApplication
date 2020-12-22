@@ -1,6 +1,6 @@
 # GMInterviewApplication
 
-Architecture: MVC
+# Architecture: MVC
 GitHub Api that is used in this project is a Public Api to fetch the appropriate JSON response.
 URL: https://api.github.com/repos/eficode/weatherapp/commits
 But you can also use my personal github api for my repo: https://api.github.com/repos/PRK523/GitHubApi/commits
