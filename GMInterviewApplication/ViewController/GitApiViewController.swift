@@ -11,6 +11,7 @@ class GitApiViewController: UIViewController, UITableViewDelegate, UITableViewDa
     @IBOutlet weak private var tableView: UITableView?
     
     private var authorName = [String]()
+    private var commitSha = [String]()
     private var commitMessage = [String]()
     
     override func viewDidLoad() {
@@ -35,6 +36,7 @@ class GitApiViewController: UIViewController, UITableViewDelegate, UITableViewDa
         let cell = tableView.dequeueReusableCell(withIdentifier: "GitApiCustomCell") as! GitApiCustomCell
         cell.authorName.text = authorName[indexPath.row]
         cell.commitMessage.text = commitMessage[indexPath.row]
+        cell.commitSha.text = commitSha[indexPath.row]
         
         cell.selectionStyle = UITableViewCell.SelectionStyle.none
         return cell
@@ -63,9 +65,11 @@ class GitApiViewController: UIViewController, UITableViewDelegate, UITableViewDa
                 let item = try decoder.decode([UserData].self, from: data)
                 for i in item {
                     let message = i.commit?.message
+                    let commitSha = i.sha
                     let authorName = i.commit?.author?.name
                     
                     self.authorName.append("Author Name: " + authorName!)
+                    self.commitSha.append("Commit Sha: " + commitSha!)
                     self.commitMessage.append("Commit Message: " + message!)
                 }
                 DispatchQueue.main.async {

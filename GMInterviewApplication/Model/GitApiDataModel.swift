@@ -8,6 +8,7 @@
 import UIKit
 
 struct UserData: Codable {
+    let sha : String?
     let commit : Commit?
     
     struct Commit: Codable {
