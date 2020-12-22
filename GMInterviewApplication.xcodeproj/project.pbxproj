@@ -16,6 +16,7 @@
 		6B3EC5012591887300E052A1 /* GitApiDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3EC5002591887300E052A1 /* GitApiDataModel.swift */; };
 		6B3EC50725918A5700E052A1 /* GitApiCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3EC50625918A5700E052A1 /* GitApiCustomCell.swift */; };
 		6B3EC50C25918ABA00E052A1 /* GitApiCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B3EC50B25918ABA00E052A1 /* GitApiCustomCell.xib */; };
+		6B3EC518259197F500E052A1 /* GitApiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3EC517259197F500E052A1 /* GitApiViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		6B3EC5002591887300E052A1 /* GitApiDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitApiDataModel.swift; sourceTree = "<group>"; };
 		6B3EC50625918A5700E052A1 /* GitApiCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitApiCustomCell.swift; sourceTree = "<group>"; };
 		6B3EC50B25918ABA00E052A1 /* GitApiCustomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GitApiCustomCell.xib; sourceTree = "<group>"; };
+		6B3EC517259197F500E052A1 /* GitApiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitApiViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +143,7 @@
 		6B3EC51625918C0B00E052A1 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				6B3EC517259197F500E052A1 /* GitApiViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -279,6 +282,7 @@
 				6B3EC5012591887300E052A1 /* GitApiDataModel.swift in Sources */,
 				6B3EC4CD2591862700E052A1 /* AppDelegate.swift in Sources */,
 				6B3EC4CF2591862700E052A1 /* SceneDelegate.swift in Sources */,
+				6B3EC518259197F500E052A1 /* GitApiViewController.swift in Sources */,
 				6B3EC50725918A5700E052A1 /* GitApiCustomCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
