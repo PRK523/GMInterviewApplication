@@ -41,8 +41,8 @@ class GitApiViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     private func parse() {
-        //you can also use my current repos url: https://api.github.com/repos/PRK523/GitHubApi/commits?=da78e338b643d0433bf96d996a2c214057822bc8
-        guard let url = URL(string: "https://api.github.com/repos/PRK523/GitHubApi/commits?=da78e338b643d0433bf96d996a2c214057822bc8") else { return }
+        //you can also use my one of my current repos url, but it has 11 commits. https://api.github.com/repos/PRK523/GitHubApi/commits
+        guard let url = URL(string: "https://api.github.com/repos/eficode/weatherapp/commits") else { return }
         URLSession.shared.dataTask(with: url) { (data, response, error) in
             guard let data = data else { return }
             do {
