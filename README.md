@@ -1,4 +1,3 @@
-# GMInterviewApplication
 
 # Architecture: MVC
 GitHub Api that is used in this project is a Public Api to fetch the appropriate JSON response.
